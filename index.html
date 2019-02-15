@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="calc.js"></script>
 </head>
 <body>
-This is the start page.
+    <div class = "main">
+        <form name = "form">
+            <input class="textview" name="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input class="button" value="(" onclick="insert('(')"></td>
+                <td><input class="button" value=")" onclick="insert(')')"></td>
+                <td><input class="button" value="%" onclick="insert('%')"></td>
+                <td><input class="button" value="AC" onclick="ac()"></td>
+            </tr>
+            <tr>
+                <td><input class="button" value="7" onclick="insert(7)"></td>
+                <td><input class="button" value="8" onclick="insert(8)"></td>
+                <td><input class="button" value="9" onclick="insert(9)"></td>
+                <td><input class="button" value="/" onclick="insert('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" value="4" onclick="insert(4)"></td>
+                <td><input class="button" value="5" onclick="insert(5)"></td>
+                <td><input class="button" value="6" onclick="insert(6)"></td>
+                <td><input class="button" value="x" onclick="insert('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" value="1" onclick="insert(1)"></td>
+                <td><input class="button" value="2" onclick="insert(2)"></td>
+                <td><input class="button" value="3" onclick="insert(3)"></td>
+                <td><input class="button" value="-" onclick="insert('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" value="0" onclick="insert(0)"></td>
+                <td><input class="button" value="." onclick="insert('.')"></td>
+                <td><input class="button" value="=" onclick="equal()"></td>
+                <td><input class="button" value="+" onclick="insert('+')"></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
