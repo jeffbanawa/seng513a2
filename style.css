@@ -2,20 +2,57 @@
 {
     margin: 0;
     padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
 }
 
-.button {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    margin: 2px;
-    cursor: pointer;
+table
+{
+    table-layout: fixed;
+    width: 100%;
+}
+
+#answer {
+    padding: 10px;
+    text-align: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    background: #D3D3D3;
+}
+.grid-container > div {
+    background-color: #AFDCEB;
     text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.grid-item1 {
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 
 .textview{
-    width: 217px;
-    margin: 5px;
-    font-size: 25px;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    margin: 10px;
     padding: 5px;
+}
+
+.main
+{
+    max-width: 100%;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #D3D3D3;
 }
