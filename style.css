@@ -12,6 +12,14 @@ table
     width: 100%;
 }
 
+input
+{
+    max-width: 100%;
+    width: 96%;
+    margin: 10px;
+    text-align: right;
+}
+
 #answer {
     padding: 10px;
     text-align: right;
