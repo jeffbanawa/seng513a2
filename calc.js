@@ -5,12 +5,16 @@ function insert(num) {
 function equal() {
     const input = document.form.textview.value;
     if (input) {
-        var prevText = document.form.textview.value+"=";
         document.form.textview.value = eval(document.form.textview.value);
+        var newText = document.form.textview.value;
         var prev = document.getElementById("answer");
-        prev.innerHTML = prevText;
+        prev.innerHTML = input+"=";
     }
 }
 function ac() {
+    if (document.form.textview.value === "") {
+        var prev = document.getElementById("answer");
+        prev.innerHTML = "";
+    }
     document.form.textview.value = "";
 }
